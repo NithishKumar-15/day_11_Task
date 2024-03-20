@@ -1,0 +1,125 @@
+html{
+   background-color: rgb(202,210,197); 
+}
+*{
+    margin: 0;
+}
+header{
+    height: 70px;
+    display:flex;
+    background-color:#2F3D46;
+    width:100vw;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+.githubtext{
+    padding-left: 610px;
+}
+.gitlogo{
+    
+    padding-left: 20px;
+}
+#bodyitem{
+    margin-top: 80px;
+    margin-left: 250px;
+    width:fit-content;
+    height: fit-content;
+    display: grid;
+    justify-content: center;
+    grid-template-areas: "sec1 sec2"
+                        "sec1 sec33";
+}
+.sec33{
+    grid-area: sec33;
+    width: fit-content;
+    height: fit-content;
+}
+.sec33flex{
+    display: flex;
+}
+
+.sec1{
+    grid-area: sec1;  
+    border-radius: 25px;
+    background-color:#2F3D46;
+    width: 320px;
+    height: 550px;
+}
+
+.sec2{
+    width: 450px;
+    grid-area: sec2;
+    margin-top:20px;
+    margin-left: 150px;
+    height: 35px;
+    color:rgb(153,153,153);
+    background-color:#2F3D46;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 30px;
+    font-size: 20px;
+}
+
+.sec3{
+    grid-area: sec3;
+    margin-left:80px;
+    border-radius: 20px;
+    background-color:#2F3D46;
+    width: 190px;
+    height:150px;
+}
+
+.sec4{
+    grid-area: sec4;
+    border-radius: 20px;
+    background-color:#2F3D46;
+    width: 190px;
+    height:150px;
+    margin-left: 30px;
+}
+
+.sec5{
+    grid-area: sec5;
+    border-radius: 20px;
+    background-color:#2F3D46;
+    width: 190px;
+    height:150px;
+    margin-left: 30px;
+}
+
+.sec6{
+    grid-area: sec6;
+    border-radius: 20px;
+    background-color:#2F3D46;
+    width: 650px;
+    height:210px;
+    margin-left:80px;
+    margin-top: 50px;
+}
+/*Media query*/
+
+/* @media(max-width:1317px){
+    #bodyitem{
+        margin-left: 150px;
+    }
+}
+
+@media(max-width:1207){
+    #bodyitem{
+        margin-left: 100px;
+    }
+} */
+
+@media only screen and (max-width: 1207px) {
+    #bodyitem {
+        margin-left: 100px;
+    }
+  }
+
+  @media only screen and (min-width: 1208px) and (max-width: 1317px) {
+    /* Add your styles for screens between 1208px and 1317px here */
+    #bodyitem  {
+        margin-left: 150px;
+    }
+  }
